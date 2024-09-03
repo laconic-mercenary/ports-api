@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.frontier.lib</groupId>
+	<artifactId>ports-api</artifactId>
+	<version>1.0-RC1</version>
+	<name>ports-api</name>
+	<description>ports-api</description>
+
+	<properties>
+		<javase.version>1.8</javase.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jodatime.version>2.3</jodatime.version>
+		<com.frontier.lib.version>1.0-RC1</com.frontier.lib.version>
+		<junit.version>4.11</junit.version>
+		<org.mockito.version>1.9.5</org.mockito.version>
+		<org.apache.commons.io.version>2.4</org.apache.commons.io.version>
+		<org.apache.log4j.version>1.2.17</org.apache.log4j.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>${javase.version}</source>
+					<target>${javase.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>${org.mockito.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.frontier.lib</groupId>
+			<artifactId>frontier-library</artifactId>
+			<version>${com.frontier.lib.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+
+	</dependencies>
+
+</project>
